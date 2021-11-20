@@ -1,0 +1,28 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Practice site using webpack and associated workflows.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trimagnus/restaurant.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "trimagnus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trimagnus/restaurant/issues"
+  },
+  "homepage": "https://github.com/trimagnus/restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
