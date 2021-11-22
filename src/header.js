@@ -2,9 +2,11 @@ export default function makeHeader() {
   const header = document.createElement('header');
   header.innerHTML = `
   <h1>The Restaurant</h1>
-  <button id="homeButton">Home</button>
-  <button id="menuButton">Menu</button>
-  <button id="contactButton">Contact</button>
+  <nav>
+    <div id="homeButton"><a class="navLink selectedNav" href="#">Home</a></div>
+    <div id="menuButton"><a class="navLink" href="#">Menu</a></div>
+    <div id="contactButton"><a class="navLink" href="#">Contact</a></div>
+  </nav>
   `;
 
   return header;

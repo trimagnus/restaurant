@@ -14,15 +14,15 @@ main.appendChild(makeHomePage());
 content.appendChild(makeFooter());
 
 const homeClicked = (e) => {
-  clearMain();
+  clearAndSet(e.target);
   main.appendChild(makeHomePage());
 };
 const menuClicked = (e) => {
-  clearMain();
+  clearAndSet(e.target);
   main.appendChild(makeMenuPage());
 };
 const contactClicked = (e) => {
-  clearMain();
+  clearAndSet(e.target);
   main.appendChild(makeContactPage());
 };
 
@@ -31,6 +31,18 @@ const clearMain = () => {
     main.removeChild(main.firstChild);
   }
 }
+
+const setCurrentTab = (target) => {
+  for(const node of document.getElementsByClassName('navLink')) {
+    node.classList.remove('selectedNav');
+  }
+  target.classList.add('selectedNav');
+};
+
+const clearAndSet = (target) => {
+  clearMain();
+  setCurrentTab(target);
+};
 
 document.querySelector('#homeButton').addEventListener('click', homeClicked);
 document.querySelector('#menuButton').addEventListener('click', menuClicked);
