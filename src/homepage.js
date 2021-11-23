@@ -4,35 +4,19 @@ export default function makeHomePage() {
   const home = document.createElement('div');
   let homePageText = '';
 
-  homePageText += `<h2>The best food and atmosphere on the planet!`;
+  homePageText += `<h2 class="homeHeader">The best food and atmosphere on the planet!</h2>`;
 
   const imageData = [
     { url: "./img/alexander-schimmeck-6bykmLxy-3Y-unsplash.jpg",
-      caption: "A caption",
-      description: "A description"},
+      caption: "A bunch of fresh vegetables.",
+      description: "We use seasonal vegetables along with a hand selection of locally sourced meat and fish."},
     { url: "./img/mick-haupt-Spjvmx7MJGs-unsplash.jpg",
-      caption: "A caption",
-      description: "A description"},
+      caption: "A brick gateway.",
+      description: "Come and enjoy the atmosphere while gazing upon the breathtaking views of the valley."},
     { url: "./img/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg",
-      caption: "A caption",
-      description: "A description"},
+      caption: "A smiling woman who is eating.",
+      description: "We treat our guests like family here at Restaurant."},
   ];
-
-
-  // homePageText += `<div class="homePictureSpread">
-  //   <div class="pictureCard">
-  //     <img width="250" height="200" src="./img/alexander-schimmeck-6bykmLxy-3Y-unsplash.jpg">
-  //     <p>Caption for img</p>
-  //   </div>
-  //   <div class="pictureCard">
-  //     <img width="250" height="200" src="./img/mick-haupt-Spjvmx7MJGs-unsplash.jpg">
-  //     <p>Caption for img</p>
-  //   </div>
-  //   <div class="pictureCard">
-  //     <img width="250" height="200" src="./img/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg">
-  //     <p>Caption for img</p>
-  //   </div>
-  // </div>`;
 
   home.innerHTML = homePageText;
   home.appendChild(makeCarousel(imageData));
