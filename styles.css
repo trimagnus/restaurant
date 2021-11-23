@@ -90,6 +90,9 @@ main {
   margin-bottom: 10px;
 }
 
+/* Contact Styles */
+
+
 /* Footer Styles */
 footer {
   display: flex;
@@ -112,8 +115,8 @@ footer {
 .carousel {
   display: flex;
   flex-direction: column;
-  max-width: 630px;
-  max-height: 480px;
+  max-width: 600px;
+  height: 400px;
   margin: 20px auto;
   padding: 20px;
   background-color: rgba(0,0,0,0.7);
