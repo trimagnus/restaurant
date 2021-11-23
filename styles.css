@@ -60,6 +60,7 @@ main {
   /* background-color: rgba(0,0,0,0.3); */
   padding: 5px;
   margin-top: 20px;
+  margin: 20px auto 0 auto;
 }
 
 /* Home Styles */
@@ -91,7 +92,23 @@ main {
 }
 
 /* Contact Styles */
+.contact {
+  display: inline-block;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0.3);
+}
 
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact .contactSection {
+  margin-top: 1em;
+}
 
 /* Footer Styles */
 footer {
@@ -179,8 +196,10 @@ footer {
     border: none;
     border-left: 4px solid white;
   }
-
   .menuSection {
     padding: 0;
+  }
+  .contact {
+    font-size: 24px;
   }
 }

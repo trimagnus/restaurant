@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeContactPage)\n/* harmony export */ });\nfunction makeContactPage() {\n  const contact = document.createElement('div');\n  contact.innerHTML = `<p>This is the contact page</p>`;\n\n  return contact;\n}\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeContactPage)\n/* harmony export */ });\nfunction makeContactPage() {\n  const contact = document.createElement('div');\n  contact.innerHTML = `\n  <div class=\"contact\">\n    <p>We will cater your next gathering, call us today!</p>\n    <p class=\"contactSection\">Restaurant</p>\n    <p>5555 Random Drive</p>\n    <p>Distant, CA 99999</p>\n    <p class=\"contactSection\">Phone: (555) 555-5555</p>\n    <p>Fax: (555) 111-5151</p>\n  </div>\n  `;\n\n  return contact;\n}\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
 
 /***/ }),
 
