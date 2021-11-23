@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,8 +7,10 @@
 
 body {
   height: 100%;
-  background-image: url("./jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   padding: 0 15px;
 }
@@ -20,11 +23,12 @@ body {
   margin: 0 auto;
 }
 
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;ß
+  padding: 30px 0;
 }
 
 header h1 {
@@ -43,23 +47,64 @@ header nav a {
   color: white;
   padding: 10px 15px 5px 15px;
   text-shadow: 0 0 2px black;
+  font-family: sans-serif;
 }
 
 header nav .selectedNav {
   border-bottom: 4px solid white;
 }
 
+/* Main Styles */
 main {
   flex: 1 0 auto;
-  /* background-color: #999; */
+  /* background-color: rgba(0,0,0,0.3); */
   padding: 5px;
+  margin-top: 20px;
 }
 
+/* Home Styles */
+.homePictureSpread {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.pictureCard p {
+  font-size: 18px;
+}
+
+/* Menu Styles */
+.menuSectionHeader {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.menuSection {
+  background-color: rgba(80,80,80,0.6);
+  padding: 0 20px;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.menuCard {
+  margin-top: 10px 0;
+  padding: 15px;
+}
+
+.menuItemTitle {
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
 footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  border-top: 1px solid grey;
+  border-top: 1px solid #ccc;
+  color: #ccc;
   padding: 10px 0;
 }
 
@@ -71,6 +116,45 @@ footer {
   fill: grey;
 }
 
+/* Carousel Styles */
+.carousel {
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+  max-height: 480px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+}
+
+.carouselArrow {
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.carousel nav, .carousel nav .carouselIndicators {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.carousel nav .carouselIndicators {
+  flex-grow: 1;
+}
+
+.carousel .carouselImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
 @media (max-width: 630px) {
   header {
     flex-direction: column;
@@ -78,12 +162,19 @@ footer {
     align-items: center;
     gap: 10px;
   }
+
+  .homePictureSpread {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 320px) {
   header h1 {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 50px;
   }
   header nav {
     flex-direction: column;
@@ -94,4 +185,7 @@ footer {
     border-left: 4px solid white;
   }
 
+  .menuSection {
+    padding: 0;
+  }
 }
