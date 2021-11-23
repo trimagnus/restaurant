@@ -63,16 +63,8 @@ main {
 }
 
 /* Home Styles */
-.homePictureSpread {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  padding: 20px 0;
-}
-
-.pictureCard p {
-  font-size: 18px;
+.homeHeader {
+  text-align: center;
 }
 
 /* Menu Styles */
