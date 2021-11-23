@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeFooter)\n/* harmony export */ });\nfunction makeFooter() {\n  const footer = document.createElement('footer');\n  const ghImgSrc = \"../node_modules/super-tiny-icons/images/svg/github.svg\";\n  footer.innerHTML = `<p>&copy 2021 Joshua Cahoon</p>`;\n  footer.innerHTML += `<a href=\"https://github.com/trimagnus\"><img width=\"20px\" height=\"20px\" class=\"ghIcon\" src=\"${ghImgSrc}\"></img></a>`\n  return footer;\n}\n\n//# sourceURL=webpack://restaurant/./src/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ makeFooter)\n/* harmony export */ });\nfunction makeFooter() {\n  const footer = document.createElement('footer');\n  const ghImgSrc = \"./img/GitHub-Mark-Light-64px.png\";\n  footer.innerHTML = `<p>&copy 2021 Joshua Cahoon</p>`;\n  footer.innerHTML += `<a href=\"https://github.com/trimagnus\"><img width=\"20px\" height=\"20px\" class=\"ghIcon\" src=\"${ghImgSrc}\"></img></a>`\n  return footer;\n}\n\n//# sourceURL=webpack://restaurant/./src/footer.js?");
 
 /***/ }),
 
