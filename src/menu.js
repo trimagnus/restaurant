@@ -1,35 +1,32 @@
 const menuData = {
   Appetizers: [
-    {title: 'Egg Rolls',
-    description: 'Hot and fresh egg rolls.',
+    {title: 'Dipping Bread',
+    description: 'Warmed french bread with an olive oil and balsamic vinegar dip.',
     price: '$5'},
-    {title: 'Egg Rolls',
-    description: 'Hot and fresh egg rolls.',
+    {title: 'Soup of the day',
+    description: 'Chef\'s choice. Ask your server for more information.',
     price: '$5'}
   ],
   Dinners: [
     {title: 'Chicken Parmesean',
     description: 'Juicy breaded chicken topped with grandma\'s home made sauce and gooey mozzella.',
     price: '$15'},
-    {title: 'Chicken Parmesean',
-    description: 'Juicy breaded chicken topped with grandma\'s home made sauce and gooey mozzella.',
-    price: '$15'},
+    {title: 'Chicken Marsala',
+    description: 'Chicken with garlic and mushrooms and a wine sauce made from local vinyards. Served with creamy mashed potatoes and roasted asparagus.',
+    price: '$16.5'},
   ],
   Desserts: [
-    {title: 'Tiramisu',
-    description: 'Espresso soaked lady fingers topped with mascapone whip and cocoa powder.',
-    price: '$12'},
-    {title: 'Tiramisu',
+    {title: 'Tiramisù',
     description: 'Espresso soaked lady fingers topped with mascapone whip and cocoa powder.',
     price: '$12'},
   ],
   Drinks: [
+    {title: 'Espresso',
+    description: 'Made from fair trade coffee. Served to order.',
+    price: '$5'},
     {title: 'Soft Drinks',
     description: 'Enjoy our selection of any conceivable fountain drink.',
-    price: '$4'},
-    {title: 'Soft Drinks',
-    description: 'Enjoy our selection of any conceivable fountain drink.',
-    price: '$4'},
+    price: '$3.5'},
   ]
 };
 
